@@ -1,0 +1,58 @@
+* {
+  background-color: #f8f7f5;
+  
+}
+
+.background-image {
+  background-color: #d4d4d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div img {
+  max-width: 400px;
+  background-color: #d4d4d4;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+h1:last-of-type{
+    margin-bottom: 60px;
+}
+
+h1 em {
+  background-color: #d4d4d4;
+}
+
+.aboutMe,
+.technicalSkills,
+.myServices,
+.socialMedia,
+.sendMeAMessage {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.myServices {
+  line-height: 1.5;
+}
+
+.fa-brands {
+  color: #737578;
+}
+
+.submit {
+  border-radius: 5px;
+  background-color: #737578;
+  color: white;
+ margin-left: 20px;
+ padding: 10px
+}
