@@ -35,6 +35,10 @@ console.log("Value of Scarlet Witch is", superheros.indexOf('Scarlet Witch')); /
 
 console.log("Joined Array:", superheros.join('-'));
 
-let slicedArray = superheros.slice(0, 1)
-console.log(slicedArray);
+let slicedArray = superheros.slice(0, 3)
+console.log("sliced array:",slicedArray);
+console.log(superheros);
 
+let removedElements = superheros.splice(2,2)
+console.log("Removed elements:",removedElements);
+console.log(superheros);
