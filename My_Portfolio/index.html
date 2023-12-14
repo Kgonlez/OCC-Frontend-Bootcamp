@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/b323c4c499.js"
@@ -9,82 +15,134 @@
     ></script>
   </head>
   <body>
-    <div class="background-image">
-      <img src="assets/portfolio_logo.png" alt="AI profile picture" />
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#">Kelly Gonzalez Galvez</a>
+        <div class="navbar-nav">
+          <ul class="navbar-nav-ul">
+            <li class="nav-link" href="#">Home</li>
+            <li class="nav-link" href="#">About</li>
+            <li class="nav-link" href="#">Resume</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Introduction -->
+    <div class="main">
+      <div class="intro-text">
+        <h1>I'm <em>Kelly,</em> a Frontend Developer</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+          eum.
+        </p>
+      </div>
+
+      <div class="background-image">
+        <img src="assets/portfolio_logo.png" alt="AI profile picture" />
+      </div>
     </div>
 
-    <h1>Hi!</h1>
+    <!-- About Container -->
+    <div class="about-container">
+      <img src="assets/plantImg.jpg" alt="plant image" />
 
-    <h1>I'm <em>Kelly Gonzalez Galvez</em></h1>
+      <div class="aboutMe">
+        <h5>Learn more about me</h5>
+        <p class="lead">
+          Welcome to my creative space! When I'm not immersed in the digital
+          world, you'll often find me sipping on a cup of coffee, fueling my
+          passion for both caffeine and creativity. I specialize in designing
+          and developing web pages, embracing a sleek and modern aesthetic while
+          ensuring a smooth and intuitive user experience. Excited to share my
+          work and connect with you!
+        </p>
 
-    <div class="aboutMe">
-      <h5>About me:</h5>
-
-      <p>
-        Welcome to my creative space! When I'm not immersed in the digital
-        world, you'll often find me sipping on a cup of coffee, fueling my
-        passion for both caffine and creativity. I specialize in designing and
-        developing web pages, embracing a sleek and modern aesthetic while
-        ensuring a smooth and intuitive user experience. Excited to share my
-        work and connect with you!
-      </p>
+        <h5>Technical Skills</h5>
+        <ul class="skills">
+          <li class="skill-list">Git</li>
+          <li class="skill-list">GitHub</li>
+          <li class="skill-list">HTML</li>
+          <li class="skill-list">CSS</li>
+          <li class="skill-list">JavaScript</li>
+          <li class="skill-list">Bootstrap</li>
+          <li class="skill-list">React</li>
+        </ul>
+      </div>
     </div>
-    <hr />
-
-    <div class="technicalSkills">
-      <h4>Technical Skills:</h4>
-      <ul>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>HTML</li>
+    <!-- My Serivces cards -->
+    <div class="myServices my-5">
+      <h4 class="lead">My Services</h4>
+      <ul class="card-deck">
+        <li class="card">
+          <img src="./assets/frontend.png" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title">Frontend Development</h5>
+          </div>
+        </li>
+        <li class="card">
+          <img
+            src="./assets/webDesignImg.png"
+            class="card-img-top"
+            alt="..."
+            style="height: 400px"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Webpage Design</h5>
+          </div>
+        </li>
+        <li class="card">
+          <img src="./assets/techSupport.png" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title">Tech Support</h5>
+          </div>
+        </li>
+        <li class="card">
+          <img
+            src="./assets/virtualAssistance.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Virtual Assistance</h5>
+          </div>
+        </li>
       </ul>
     </div>
-    <hr />
 
-    <div class="myServices">
-      <h4>My Services:</h4>
-      <ol>
-        <li>Frontend Development</li>
-        <li>Webpage design</li>
-        <li>Tech support</li>
-        <li>Virtual Assistance</li>
-      </ol>
+    <!-- Contact me -->
+    <div class="contact">
+      <h4 class="lead">Contact Me</h4>
+      <ul class="lead">
+        <li>
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedIn.com" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <a href="https://www.GitHub.com" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="https://www.gmail.com" target="_blank">Gmail</a>
+        </li>
+      </ul>
     </div>
-    <hr />
 
-    <div class="socialMedia">
-      <h4>Social media</h4>
-      <dl>
-        <dt><i class="fa-brands fa-facebook"></i></dt>
-        <dd>
-          Reach me through <a href="https://www.facebook.com">Facebook</a>
-        </dd>
-        <dt><i class="fa-brands fa-linkedin"></i></dt>
-        <dd>
-          Reach me through <a href="https://www.linkedIn.com">LinkedIn</a>
-        </dd>
-        <dt><i class="fa-brands fa-square-instagram"></i></dt>
-        <dd>
-          Reach me through <a href="https://www.Instagram.com">Instagram</a>
-        </dd>
-      </dl>
-    </div>
-    <hr />
-
+    <!-- 
     <div class="sendMeAMessage">
       <h4>Send me a message</h4>
 
       <label for="name">Name:</label>
       <input type="text" name="name" required />
-      <br /><br>
+      <br /><br />
 
       <label for="message">Message:</label>
       <textarea name="message" rows="10" cols="20"></textarea>
     </div>
     <br />
 
-    <button type="submit" class="submit">Send</button>
-
-    
+    <button type="submit" class="submit">Send</button> -->
   </body>
 </html>
